@@ -1,0 +1,28 @@
+{
+  "name": "projeto---api-rest---ve-culos",
+  "version": "1.0.0",
+  "description": "Um sistema back que faz cadastro de veículos",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriana-scruz/Projeto---API-REST---Ve-culos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriana-scruz/Projeto---API-REST---Ve-culos/issues"
+  },
+  "homepage": "https://github.com/adriana-scruz/Projeto---API-REST---Ve-culos#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.23.2",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.1"
+  }
+}
