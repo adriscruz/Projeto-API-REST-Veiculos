@@ -1,24 +1,21 @@
 const { Router } = require("express");
 const router = Router();
+const VehiclesController = require("../controllers/vehiclesController");
+const vehicleCreationValidation = require("../middlewares/vehicleCreationValidation");
 
-router.post("/", (req, res) => {
-  console.log("Test");
-});
+router.post(
+  "/",
+  vehicleCreationValidation.validationBodyResult,
+  vehicleCreationValidation.checkResult,
+  VehiclesController.createVehicle
+);
 
-router.get("/", (req, res) => {
-  console.log("Test");
-});
+router.get("/", VehiclesController.getAllProducts);
 
-router.get("/:id", (req, res) => {
-  console.log("Test");
-});
+router.get("/:id", VehiclesController.getProductById);
 
-router.patch("/:id", (req, res) => {
-  console.log("Test");
-});
+router.patch("/:id", VehiclesController.updateVehicle);
 
-router.delete("/:id", (req, res) => {
-  console.log("Test");
-});
+router.delete("/:id", VehiclesController.deleteVehicle);
 
 module.exports = router;
