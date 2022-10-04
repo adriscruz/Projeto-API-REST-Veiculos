@@ -11,6 +11,6 @@ app.use(
 );
 
 const carsRouter = require("../routes/carsRouter");
-app.use(carsRouter);
+app.use("/cars", carsRouter);
 
 app.listen(PORT, console.log(`Server running at Port: ${PORT}`));
