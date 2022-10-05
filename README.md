@@ -1,4 +1,5 @@
 
+
 # Projeto - API REST - Veículos
 
 
@@ -13,6 +14,14 @@ Um sistema back que faz cadastro de veículos e listagem de carros, conforme flu
 ![App Screenshot](https://codandoaos30.com.br/wp-content/uploads/2022/10/Screenshot_819.png)
 
 
+## Instalação
+
+Instale o projeto com npm
+
+```bash
+  npm install express sequelize dotenv 
+```
+A conexão com o bd foi feita por docker e postgres.
 ## Deploy
 
 Para fazer o deploy desse projeto rode
